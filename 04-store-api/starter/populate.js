@@ -11,11 +11,13 @@ const loadData = async ()=>{
     await connectDB(process.env.MONGO_URI)
     await Products.deleteMany();
     await Products.create(data);
+    process.exit(0)
 }
 
 loadData();
 
 require('dotenv').config()
+
 // absolute Kurzform
     // await mongoose.connect(process.env.MONGO_URI)
     // await mongoose.model('Products').deleteMany()

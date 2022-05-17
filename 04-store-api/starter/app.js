@@ -33,3 +33,14 @@ const start = () => {
 }
 
 start();
+
+
+//Aufgehört bei 4:18:34
+
+//req.body
+//req.query
+
+//res.send
+//res.json
+
+//next(args) -> pass arg to next middleware
